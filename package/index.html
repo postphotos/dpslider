@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Slider for fires</title>
+
+<style>
+#box { 
+	border: 10px solid black;  
+	width: 800px; 
+	height: 525px;
+	}
+
+#box, #container { margin: 0 auto; }	
+
+#box, h3, p, div#container { text-align: center; font-family: Arial, Helvetica, sans-serif;}	
+
+h3 { font-size:1.5em; font-weight: 800; }
+p { font-size:1.1m; font-weight: 300; }
+	
+</style>
+
+</head>
+<body>
+
+
+<div id="box">
+	<h3>Edith Wolford Elementary School area</h3>
+	<div id="container">
+	
+		<div><img alt="before" src="./images/01-before.jpg" width="700" height="410" /></div>
+		<div><img alt="after" src="./images/01-after.jpg" width="700" height="500" /></div>
+
+	
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- baking javascript, yeehaw -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="./js/jquery.beforeafter-1.4.min.js"></script>
+
+<script type="text/javascript" src="./js/jquery.ui.touch-punch.min.js"></script>
+
+<script type="text/javascript">
+$('#container').beforeAfter({
+	animateIntro : true,
+        introDelay : 720,
+        introDuration : 500,
+        showFullLinks : false
+});
+	</script>
+
+	</body>
+</html>
